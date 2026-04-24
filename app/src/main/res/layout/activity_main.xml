@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#050B14"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="RastiSMS Gateway Pro"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#EAFBFF"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="14dp" />
+
+        <EditText
+            android:id="@+id/etServerUrl"
+            android:hint="Server URL مثال: https://example.com"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8EA6B8"
+            android:inputType="textUri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etApiPath"
+            android:hint="API Path مثال: /api/sms/gateway/poll/"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8EA6B8"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:hint="User"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8EA6B8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:hint="Password"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8EA6B8"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etDeviceToken"
+            android:hint="Device Token مثال: smsrasti_test_123"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8EA6B8"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etPollInterval"
+            android:hint="Poll Interval seconds مثال: 7"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8EA6B8"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/swEnableSending"
+            android:text="Enable Sending / فعال بودن ارسال"
+            android:textColor="#FFFFFF"
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" />
+
+        <Switch
+            android:id="@+id/swEnableReceiving"
+            android:text="Enable Receiving / فعال بودن دریافت"
+            android:textColor="#FFFFFF"
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/swAutoStart"
+            android:text="Auto Start after reboot / شروع خودکار بعد از روشن شدن گوشی"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:text="Save Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnTest"
+            android:text="Test Connection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:text="Start Service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:text="Stop Service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSendTest"
+            android:text="Send Test SMS From Server Queue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnBattery"
+            android:text="Open Battery Optimization Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnNotificationSettings"
+            android:text="Open Notification Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAutoStartSettings"
+            android:text="Open Auto Start / Manufacturer Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAppSettings"
+            android:text="Open App Permission Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnHelp"
+            android:text="Help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:text="وضعیت: آماده"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#D9FCFF"
+            android:padding="14dp"
+            android:layout_marginTop="14dp"
+            android:background="#102033"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
